@@ -1,17 +1,16 @@
 pipeline {
-    agent any
+	agent any
+	stages {
+		stage('Install dependencies') {
+			steps {
+				sh 'npm install’
+				}
+			}
 
-    stages {
-        stage('Install Node.js and Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
-        stage('Run Express App') {
-            steps {
-                sh 'nohup npm start &'
-            }
-        }
-    }
+		stage('Run tests') {
+			steps {
+				sh 'npm test’
+				}
+			}
+		}
 }
