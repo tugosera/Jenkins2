@@ -1,0 +1,12 @@
+{
+  "name": "jenkins_rakendus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+  "start": "main.js"
+}
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
